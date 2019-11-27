@@ -1,0 +1,112 @@
+.App {
+  text-align: center;
+}
+
+/* .App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+} */
+
+body {
+  margin: 0;
+  background: rgb(248, 243, 228);
+}
+
+header {
+  background: #FFA69E;
+  height: 60px;
+  /* border-radius: 0 0 15px 15px; */
+  margin-bottom: 30px;
+  opacity: 90%;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 60px;
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 50px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #5E6472;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #AED9E0;
+
+  position: absolute;
+  margin-top: 55px;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.video {
+  margin: -300px;
+  width: 1400px;
+  height: 900px;
+}
+.video_frame {
+  margin: auto;
+  overflow: hidden;
+  width: 1380px;
+  height: 350px;
+  border-radius: 25px;
+  /* justify-content: center; */
+}
