@@ -42,7 +42,7 @@ export default function NavBar () {
                         <SignUp />
                     </Route>
                     <Route path="/">
-                        <Home />
+                        <Home/>
                     </Route>
                 </Switch>
             </div>

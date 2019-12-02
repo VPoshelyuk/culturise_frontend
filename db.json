@@ -1,0 +1,374 @@
+{
+    "Events": [
+      {
+         "Name": "Hannah Wilke “Force of Nature”",
+         "Venue": {
+            "Name": "Ronald Feldman Fine Arts",
+            "Type": "Gallery",
+            "Address": "31 Mercer St., New York, NY 10013",
+            "Phone": "212-226-3232",
+            "Fax": "212-941-1536",
+            "Access": "Between Grand and Canal St.. Subway: N/R/J/M/Z to Canal Street, or 4/5/6 to Spring Street.",
+            "Area": {
+               "_areaId": "soho",
+               "text": "Soho"
+            },
+            "OpeningHour": "10:00:00",
+            "ClosingHour": "18:00:00",
+            "DaysClosed": {
+               "_mon": "1",
+               "_tue": "0",
+               "_wed": "0",
+               "_thu": "0",
+               "_fri": "0",
+               "_sat": "0",
+               "_sun": "1",
+               "_hol": "0"
+            },
+            "ScheduleDetails": "",
+            "ScheduleNote": "Monday by appointment only.",
+            "_href": "http://www.nyartbeat.com/venue/942C5461"
+         },
+         "Media": [
+            "3D: Installation"
+         ],
+         "Description": {
+            "__cdata": "“One of the ten most subversive women artists in history.” \n(Hannah Wilke listed second after Artemisia Gentileschi) Jonathan Jones, The Guardian, January 13, 2014\n \n“Perhaps more than her sexual candor, the quality that distinguished Wilke among her peers – and that forms the most illuminating comparison with artists of succeeding generations – was her spirit of affirmation.  When she was extravagantly beautiful and when she was not; when her personal life and professional career were flourishing and when they were balked; and whether the cultural and political circumstances called for celebration or gloom, she used her art to broadcast her strengths and vulnerabilities, to insist on their importance, and to model the positions that must be struck for women to have a fair share of the world’s manifest bounty.”  Nancy Princenthal “Hannah Wilke,” page 7, Prestel Verlag, 2010\n \nRonald Feldman Gallery presents a solo exhibition of work by Hannah Wilke (1940-1993).  Entitled “Force of Nature,” it is the thirteenth solo exhibition of her art mounted by Feldman Gallery since it began representing Wilke in 1972. \n\nWith great passion and acuity, Wilke empathetically and provocatively transformed her relationships and personal experiences into her practice.  Her work has often been described as incorporating a wide emotional range, which undoubtedly stemmed from her determination to speak for a more complex narrative of sexual freedom and self-representation and against stereotypes and objectification.\n\nWilke embraced and critiqued the Feminist movement, creatively engaged with word play and linguistics, and was inspired by philosophy, politics, and literature.  She consistently and fearlessly confronted the paternalistic artworld.  In her studio practice, she pioneered new forms using traditional as well as unconventional materials, and even her own body.   A fundamental commitment to the process of art making is evident in her drawing, sculpture, and performance which often emphasizes motion and sensuality.\n\nThis exhibition brings together more than fifty “Performalist Self-Portrait” images (the term Wilke used to give credit to the many people who assisted her in works she directed herself and in which she posed), as well as ceramic, kneaded eraser, and chewing gum sculptures created over 33 years.\n \nA rare opportunity to view Wilke’s iconic works, the show includes:  Super-T-Art, 1974; S.O.S. Starification Object Series, 1974; So Help Me Hannah, 1979-1985 and Intra-Venus, 1991-1993.  A powerful video sculpture entitled So Help Me Hannah summons the artist’s presence by combining video footage of Wilke’s five live performances from the series.  Also on view are works from the Needed-Erase-Her Series, 1974-1977 and  I Object: Memoirs of a Sugargiver, 1977-1978, a color photographic diptych conceived as the front and back cover of Wilke’s unrealized autobiography.\n\nWilke, a seminal artist of the late 20th century with an international reputation, was a native New Yorker who lived and worked in the city and played a significant role in the art community.  Sadly, she died of lymphoma in 1993 at the age of 52.  Not surprisingly, her confrontation with illness and death extended the complexity and integrity of her oeuvre and is an astonishing accomplishment as seen in Intra-Venus, 1991-1993.  Despite her interrupted career, Wilke’s influence on the following generations of artists cannot be overstated. \nThere have been two major retrospective exhibitions of her work: Gallery 210, University of Missouri/St. Louis in 1989; Nikolaj Contemporary Art Center in Copenhagen, Denmark in 1998, which travelled to the Bildmuseet in Sweden and to the Helsinki City Art Museum in Finland.  \n\n“The message of Hannah’s art is relevant to current issues, perhaps today more than ever,” says Marco Nocella, a Ronald Feldman Gallery Director and curator of the exhibition.  He had a close working relationship with the artist and, in tandem with Ronald and Frayda Feldman, has been actively involved in representing her work for over three decades.\n"
+         },
+         "Image": [
+            {
+               "_src": "http://www.nyartbeat.com/media/event/2019/3CCB-30",
+               "_width": "30"
+            },
+            {
+               "_src": "http://www.nyartbeat.com/media/event/2019/3CCB-80",
+               "_width": "80"
+            },
+            {
+               "_src": "http://www.nyartbeat.com/media/event/2019/3CCB-170",
+               "_width": "170"
+            }
+         ],
+         "Karma": "0.396647",
+         "Price": {
+            "_free": "1",
+            "__text": "Free"
+         },
+         "DateStart": "2019-09-19",
+         "DateEnd": "2019-11-30",
+         "ScheduleNote": "",
+         "Party": {
+            "_type": "1",
+            "_date": "2019-09-19",
+            "_start": "18:00:00",
+            "_end": "20:00:00",
+            "__text": "Opening Reception"
+         },
+         "DaysBeforeEnd": "1",
+         "PermanentEvent": "0",
+         "Distance": "155.61631302641",
+         "Datum": "world",
+         "Latitude": "40.721097",
+         "Longitude": "-74.001606",
+         "_xml:lang": "en",
+         "_id": "2019/3CCB",
+         "_href": "http://www.nyartbeat.com/event/2019/3CCB"
+      },
+      {
+         "Name": "Mel Bochner “Exasperations”",
+         "Venue": {
+            "Name": "Peter Freeman",
+            "Type": "Gallery",
+            "Address": "140 Grand St., New York, New York 10013",
+            "Phone": "212-966-5154",
+            "Fax": "212-966-5349",
+            "Access": "Between Crosby and Lafayette Sts. Subway: 6 to Spring or 6/N/R/Q to Canal Street.",
+            "Area": {
+               "_areaId": "soho",
+               "__text": "Soho"
+            },
+            "OpeningHour": "10:00:00",
+            "ClosingHour": "18:00:00",
+            "DaysClosed": {
+               "_mon": "1",
+               "_tue": "0",
+               "_wed": "0",
+               "_thu": "0",
+               "_fri": "0",
+               "_sat": "0",
+               "_sun": "1",
+               "_hol": "0"
+            },
+            "ScheduleDetails": "",
+            "ScheduleNote": "",
+            "_href": "http://www.nyartbeat.com/venue/D80BF3F1"
+         },
+         "Media": [
+            "2D: Painting"
+         ],
+         "Description": {
+            "__cdata": "Notes on “Exasperations”\n \nExasperate, irritate, frustrate, infuriate, irk, vex, piss off…from the Latin exasperatus – “to roughen.” \nThese paintings grapple with the politics of language, the camouflage of hidden motives and \nunspoken agendas. In the half-light of “alternative facts,” they question the never ending \ncontingency of truth and falsehood.\nThey exist in the oblivion of the present: I FORGET WHAT I FORGOT.\nIn the endless echo inside the bubble: BLAH, BLAH, BLAH.\nIn the constant insults to reason and logic: IT COULD BE WORSE.\nIn the disgust with half truths and outright lies: I’VE HAD IT UP TO HERE.\nIn the inauthenticity across the entire political spectrum: LOOK WHO’S TALKING.\nAnd in the contempt with it all: ARE YOU OUT OF YOUR FUCKING MIND?\nHowever, ambiguity immediately plagues any effort to say what one means and mean only what one says. This is where painting asserts its unique ability to materially embody contradictory ideas.\nWords smeared, smudged, obscured, sometimes backwards, sometimes upside down. Double takes, repetitions, reversals, self-mockery… the textual disintegrating into a cacophony of voices.\nYes, but are they funny?\n\nDO I HAVE TO PAINT YOU A PICTURE?\n \n- Mel Bochner\n                                                                                                                                \n\nMel Bochner was born in Pittsburgh in 1940, and earned a BFA in 1962 from the Carnegie Institute of Technology. His work is represented in many public collections around the world, including Art Institute of Chicago (Chicago), Tate Modern (London), Museum of Modern Art (New York), Whitney Museum of American Art (New York) and Centre Georges Pompidou (Paris). Recent solo museum exhibitions include The Jewish Museum (New York, 2014), Museù Serralves (Porto, 2013), Haus der Kunst in Munich (Munich, 2012), National Gallery of Art (Washington, 2011). Mel Bochner was included in the Carnegie International, 57thEdition, Carnegie Museum of Art (Pittsburgh, 2018). This is the artist’s eighth solo exhibition with the gallery. \n\nOn 9 November, Dia will unveil a new large-scale commission from Bochner’s Measurement series at Dia:Beacon on the occasion of the 50th anniversary of his first Measurement room. An accompanying catalogue will be published in 2020."
+         },
+         "Image": [
+            {
+               "_src": "http://www.nyartbeat.com/media/event/2019/EBCB-30",
+               "_width": "30"
+            },
+            {
+               "_src": "http://www.nyartbeat.com/media/event/2019/EBCB-80",
+               "_width": "80"
+            },
+            {
+               "_src": "http://www.nyartbeat.com/media/event/2019/EBCB-170",
+               "_width": "170"
+            }
+         ],
+         "Karma": "0",
+         "Price": {
+            "_free": "1",
+            "__text": "Free"
+         },
+         "DateStart": "2019-11-05",
+         "DateEnd": "2019-12-21",
+         "ScheduleNote": "",
+         "Party": {
+            "_type": "1",
+            "_date": "2019-11-05",
+            "_start": "18:00:00",
+            "_end": "20:00:00",
+            "__text": "Opening Reception"
+         },
+         "DaysBeforeEnd": "22",
+         "PermanentEvent": "0",
+         "Distance": "185.69382707527",
+         "Datum": "world",
+         "Latitude": "40.720371",
+         "Longitude": "-73.999434",
+         "_xml:lang": "en",
+         "_id": "2019/EBCB",
+         "_href": "http://www.nyartbeat.com/event/2019/EBCB"
+      },
+      {
+         "Name": "Suzanne McClelland “MUTE”",
+         "Venue": {
+            "Name": "Team Gallery",
+            "Type": "Gallery",
+            "Address": "83 Grand St., New York, NY 10013",
+            "Phone": "212-279-9219",
+            "Fax": "212-279-9219",
+            "Access": "Between Greene St. and Wooster St. Subway: A/C/E or N/Q/R/W to Canal St",
+            "Area": {
+               "_areaId": "soho",
+               "__text": "Soho"
+            },
+            "OpeningHour": "10:00:00",
+            "ClosingHour": "18:00:00",
+            "DaysClosed": {
+               "_mon": "1",
+               "_tue": "0",
+               "_wed": "0",
+               "_thu": "0",
+               "_fri": "0",
+               "_sat": "0",
+               "_sun": "0",
+               "_hol": "0"
+            },
+            "ScheduleDetails": "sundays openinghour 12:00",
+            "ScheduleNote": "",
+            "_href": "http://www.nyartbeat.com/venue/5AC9BC2D"
+         },
+         "Media": [
+            "2D: Painting"
+         ],
+         "Description": {
+            "__cdata": "Team (gallery, inc.) presents a show by New York-based painter Suzanne McClelland entitled MUTE.\n\nFor her fifth solo exhibition at Team, Suzanne McClelland will show a new project comprised of 26 paintings, one for each letter of the latin alphabet. Systems of communication have always been at the center of McClelland’s work, exploring the abstraction inherent in visual modes of expression and the limitations and liabilities of language and painting. In MUTE, language and semiotics assume a new level of structural and conceptual integration that drives the work towards heightened abstraction. The new paintings engage with the making of an image while avoiding representation, following an intention, simply put, to render the unutterable.\n\nThe paintings’ vertical format suggests portraiture, not landscape, though the forms are neither human nor animal but viscous spills that appear cognizant. These deltas of paint record the pouring, staining, and hardening of fugitive pigments, surface and gravity obliging mutable and formless materials to change state and arrest into image. Shape and composition appear closer to effluent deposits than painterly configurations, and the artist’s minimal interventions and mark-making in this ground disrupt our notions of agency and control.\n\nMcClelland’s off-piste approach to painterly materials has long been a signature of her work. The surfaces of her latest paintings, alternately or simultaneously dusty, creamy, inky, shining, are encrusted with frozen sprays of glitter, charcoal, and dry pigments, and call to mind brackish estuaries or petri dish cultures that manipulate our sense of scale and convey an organic vitality. Across these paintings, it is the materials that cause the color. Amid fishy teals, stentorious greys, body-bag blacks, glittering golds and milquetoast whites, one sees the manner in which things behave; a constant weeping and bleeding of matter into matter.\n\nGiven the degree to which language is embedded within the central nervous system of McClelland’s work and contemporary life, it’s noteworthy for her latest body of work to not only break it down to its most basic units, but image its active, and perhaps strategic, dissolution. The characters of the latin alphabet are among the most instantly recognizable symbols we encounter every day, though their graphic existence verges on invisibility, a trait encoded in their role as a stand-in; speech, broken down into sounds, represented by glyphs. In muting these elemental units of language, McClelland liberates them from an existential bind, severing their function from a point of origin that tethers them to what can be articulated and vocalized. The paintings in MUTE deconstruct symbols and structures into the synaptical and chemical operations of an instinctual response, and manifest an alternate alphabet for expressing things that cannot be described or spoken, yet demand to be heard.\n\nLanguage, like air and water, is an existential necessity; like air and water, it is susceptible to harboring the toxic and inimical. MUTE is set on the faultline of the Information Age and the Trump era, what James Bridle has termed a New Dark Age: “The Enlightenment ideal of distributing more information ever more widely has not led us to greater understanding and growing peace, but instead seems to be fostering social divisions, distrust, conspiracy theories and post-factual politics.” McClelland’s process for these paintings engages with notions of control and doubt, seizing on intuition, sense, and chance as powerful means of responding to, and circumventing, systems oriented around quantifying, naming, and predicting. Akin to aleatoric musical composition, MUTE is determined in course but open to chance in outcome; McClelland engages with generative procedures, mobility of form, and indeterminate notation as methods for uncharted composition and deconstruction.\n\nForm takes new and variant shape in McClelland’s installation of paintings, and each sequence and bundle of sequences, moves with “a rhythm, speed, a tone, a flow, a pattern, shape, length, pitch, conceptual direction,” as Robert Hass says of language. This body of work can be read adjacent to Susanne Langer’s aesthetic and semantic theory, which is founded on our propensity for making and discerning patterns and symbols. Langer posits that feeling and form in language is articulated through discursive symbols, and that art employs presentational symbols; MUTE occupies a unifying space between the two, surveying the constituent element and collective whole and offering innumerable permutations for form and meaning to shift and evolve based on context and arrangement. As an artist, McClelland remains obstinate yet yielding; lyrical in her thorniness.\n\nSince the mid-1980s, McClelland has shown her work extensively in the United States and abroad. Museum solos include those at the Aldrich Museum of Contemporary Art in Ridgefield, CT, the Weatherspoon Art Museum in North Carolina and the Whitney Museum of American Art in New York. Her work is included in numerous public collections, among them The Museum of Modern Art, The Metropolitan Museum of Art and The Brooklyn Museum in New York City, the Yale University Art Gallery, the Albertina in Vienna and the Walker Art Center. McClelland was included in the New Museum’s NYC 1993: Experimental Jet Set, Trash and No Star and participated in the 1993 and 2014 Whitney Biennials.\n"
+         },
+         "Image": [
+            {
+               "_src": "http://www.nyartbeat.com/media/event/2019/E260-30",
+               "_width": "30"
+            },
+            {
+               "_src": "http://www.nyartbeat.com/media/event/2019/E260-80",
+               "_width": "80"
+            },
+            {
+               "_src": "http://www.nyartbeat.com/media/event/2019/E260-170",
+               "_width": "170"
+            }
+         ],
+         "Karma": "0",
+         "Price": {
+            "_free": "1",
+            "__text": "Free"
+         },
+         "DateStart": "2019-11-14",
+         "DateEnd": "2019-12-21",
+         "ScheduleNote": "",
+         "Party": {
+            "_type": "1",
+            "_date": "2019-11-14",
+            "_start": "18:00:00",
+            "_end": "20:00:00",
+            "__text": "Opening Reception"
+         },
+         "DaysBeforeEnd": "22",
+         "PermanentEvent": "0",
+         "Distance": "194.79034128092",
+         "Datum": "world",
+         "Latitude": "40.721708",
+         "Longitude": "-74.002433",
+         "_xml:lang": "en",
+         "_id": "2019/E260",
+         "_href": "http://www.nyartbeat.com/event/2019/E260"
+      },
+      {
+         "Name": "Andrew Jilka “Meditations”",
+         "Venue": {
+            "Name": "Team Gallery",
+            "Type": "Gallery",
+            "Address": "83 Grand St., New York, NY 10013",
+            "Phone": "212-279-9219",
+            "Fax": "212-279-9219",
+            "Access": "Between Greene St. and Wooster St. Subway: A/C/E or N/Q/R/W to Canal St",
+            "Area": {
+               "_areaId": "soho",
+               "__text": "Soho"
+            },
+            "OpeningHour": "10:00:00",
+            "ClosingHour": "18:00:00",
+            "DaysClosed": {
+               "_mon": "1",
+               "_tue": "0",
+               "_wed": "0",
+               "_thu": "0",
+               "_fri": "0",
+               "_sat": "0",
+               "_sun": "0",
+               "_hol": "0"
+            },
+            "ScheduleDetails": "sundays openinghour 12:00",
+            "ScheduleNote": "",
+            "_href": "http://www.nyartbeat.com/venue/5AC9BC2D"
+         },
+         "Media": [
+            "2D: Painting"
+         ],
+         "Description": {
+            "__cdata": "Team (gallery, inc.) presents a one-person exhibition of new paintings by Andrew Jilka, entitled Meditations. This is the ninth entry in our project room series “Gallery B”.\n\nAndrew Jilka’s paintings set their sights on the accessibility of contemporary art and the pervasiveness with which its discourse is built upon a shared familiarity with a set of institutionally-endorsed works. His paintings map out scenes of collision with the aim of a reconciliation of imagistic stylizations unbound by time and place. The title of his show might reference writings by Descartes or Marcus Aurelius (he of the original self-improvement text), putting us in mind of certainty and ambiguity, stoic logic and sophist contemplation. Jilka toys with doubt, perception, and multiplicity, deriving meaning and visual pleasure not only from the relational coherences and disjunctures he orchestrates but the conceptual and aesthetic challenges they induce.\n\nIn his work, Jilka’s base layers are sourced largely from points of interest in bygone masterpieces, often those depicting scenes of domesticity or classical portraiture. He then compounds these scenes further by superimposing proposed contemporary counterparts, such as coloring book illustrations, unactivated in their purpose with a pristinely blank interiority. A rejection, seemingly, of the age-old adage to always color inside the lines activates our recognition of the demarcated yet blurred boundaries between these sources that results from their compositional integration. In Jilka’s excavations, the layers refuse to cohere, each genus adamantly holding on to its originary primacy. For example, illusionary space - sometimes preserved in the art historical layer, sometimes in the overlay from a commercial source - flattens exactly at the moment of our retinal recognition; the paintings coming in and out of focus.\n\nIn one piece, the agonized horse lifted from Picasso’s anti-fascist magnum opus Guernica serves as the backdrop for a gang of children sliding down the back of a Brachiosaurus. Joining this visual conflict is the cover of a self-described “life changing” guide titled, with laughable simplicity, How To Stop Worrying And Start Living. The author suggests we Cooperate with the Inevitable, and Don’t Worry About the Past, and the final sections advise to Stop Thinking About the Problem, and Focus on Good Things. As the easygoing children aboard the dinosaur illustrate, when life gives you mass extinction events, you might as well use them for fossil-fueled, freewheeling fun. Jilka’s composition effects radical shifts in tone that we cannot compartmentalize, and signals how complacency and brutality all-too-easily coexist; the slippery slope of blasé optimism, the wishful thinking that Worry, and its underlying causes, can be conquered through willful ignorance.\n\nJilka’s fascination with Picasso refers less to the mythology of the man himself, more so coopting the visual language of his decidedly warped perspective in a way which cuts to our understanding of hierarchical name-brand art recognition. The known mark-maker is absorbed, then regurgitated, creating new associations within our own expressive familiarity.\n\nIf Degas was correct in his assertion that “Art is not what you see, but what you make others see”, then Jilka’s concerns are with re-orienting public perception of the bridges between a formal and informal understanding of creative fulfillment. His works provide a necessary reminder that the opportunity to participate in art-making is entirely dependent on a culture which encourages it.\n"
+         },
+         "Image": [
+            {
+               "_src": "http://www.nyartbeat.com/media/event/2019/170B-30",
+               "_width": "30"
+            },
+            {
+               "_src": "http://www.nyartbeat.com/media/event/2019/170B-80",
+               "_width": "80"
+            },
+            {
+               "_src": "http://www.nyartbeat.com/media/event/2019/170B-170",
+               "_width": "170"
+            }
+         ],
+         "Karma": "0",
+         "Price": {
+            "_free": "1",
+            "__text": "Free"
+         },
+         "DateStart": "2019-11-14",
+         "DateEnd": "2019-12-21",
+         "ScheduleNote": "",
+         "Party": {
+            "_type": "1",
+            "_date": "2019-11-14",
+            "_start": "18:00:00",
+            "_end": "20:00:00",
+            "__text": "Opening Reception"
+         },
+         "DaysBeforeEnd": "22",
+         "PermanentEvent": "0",
+         "Distance": "194.79034128092",
+         "Datum": "world",
+         "Latitude": "40.721708",
+         "Longitude": "-74.002433",
+         "_xml:lang": "en",
+         "_id": "2019/170B",
+         "_href": "http://www.nyartbeat.com/event/2019/170B"
+      },
+      {
+         "Name": "exonemo “U & I”",
+         "Venue": {
+            "Name": "NowHere",
+            "Type": "Gallery",
+            "Address": "40 Wooster Street, NY 10013",
+            "Phone": "917-675-6944",
+            "Fax": "",
+            "Access": "Between Grand and Broome Streets. Subway: A/C/E and 1 to Canal Street.",
+            "Area": {
+               "_areaId": "soho",
+               "__text": "Soho"
+            },
+            "OpeningHour": "09:00:00",
+            "ClosingHour": "17:00:00",
+            "DaysClosed": {
+               "_mon": "0",
+               "_tue": "0",
+               "_wed": "0",
+               "_thu": "0",
+               "_fri": "0",
+               "_sat": "0",
+               "_sun": "0",
+               "_hol": "0"
+            },
+            "ScheduleDetails": "sundays openinghour 10:00, saturdays closinghour 18:00, sundays closinghour 17:00",
+            "ScheduleNote": "",
+            "_href": "http://www.nyartbeat.com/venue/3F3810D6"
+         },
+         "Media": [
+            "3D: Installation",
+            "Misc.: Media Arts"
+         ],
+         "Description": {
+            "__cdata": "N O W H E R E introduces its new space in Soho and the exhibition U &amp; I by exonemo.\n​\nFormed in the late 1990s, the artist unit exonemo (Kensuke Sembo and Yae Akaiwa) has created artwork for over twenty years that investigates “the boundary between two different worlds,”—the virtual and the physical, the digital and the analog.\n​\nThe exhibition title U &amp; I references the relationship of “you and I,” and how the personal connection between two people can vary between mutual understanding, disagreement, and even confrontation. As exonemo often draws from current issues, the title also references “UI,” an abbreviation for “User Interface” that straddles the line between humans and machines. This exhibition will predominantly feature an arrangement of exonemo’s past works, many of which exist along this boundary of two worlds.\n\nArtist Statement\nIf you want to see someone’s profile on social media, you usually have to tap directly on their profile icon, which means poking a stranger in the face! That’s SO RUDE! I can’t think of anything worse! I feel like I should be punished every time I do this, like with an electrical shock from the screen. Although it wouldn’t be so bad if I kissed the screen and got a little zapping in return. U and I exist in between the forces of gravity and electricity, an informational fire that burns endlessly. I have no urge to fix the tilt of my canvases, because I can’t touch them!\n​\nBiography\nThe Japanese artist unit exonemo (Kensuke Sembo and Yae Akaiwa) was formed in 1996 on the internet. Their experimental projects are typically humorous and innovative explorations of the paradoxes of digital and analog, computer networked and actual environments in our lives. Their The Road Movie won the Golden Nica for Net Vision category at Prix Ars Electronica 2006. They have been organizing IDPW gatherings and “The Internet Yami-Ichi” since 2012 and their online project “0 to 1 / 1 to 0” is currently on view during sunrise and sunset at Whitney Museum of American Art’s web site. exonemo has been based in New York since 2015.\n​"
+         },
+         "Image": [
+            {
+               "_src": "http://www.nyartbeat.com/media/event/2019/3BF5-30",
+               "_width": "30"
+            },
+            {
+               "_src": "http://www.nyartbeat.com/media/event/2019/3BF5-80",
+               "_width": "80"
+            },
+            {
+               "_src": "http://www.nyartbeat.com/media/event/2019/3BF5-170",
+               "_width": "170"
+            }
+         ],
+         "Karma": "0",
+         "Price": {
+            "_free": "0"
+         },
+         "DateStart": "2019-10-25",
+         "DateEnd": "2019-12-15",
+         "ScheduleNote": "",
+         "Party": {
+            "_type": "1",
+            "_date": "2019-10-25",
+            "_start": "18:00:00",
+            "_end": "20:00:00",
+            "__text": "Opening Reception"
+         },
+         "DaysBeforeEnd": "16",
+         "PermanentEvent": "0",
+         "Distance": "197.88223685346",
+         "Datum": "world",
+         "Latitude": "40.722207",
+         "Longitude": "-74.002468",
+         "_xml:lang": "en",
+         "_id": "2019/3BF5",
+         "_href": "http://www.nyartbeat.com/event/2019/3BF5"
+      }
+   ]
+ }

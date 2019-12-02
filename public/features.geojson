@@ -1,0 +1,285 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "area": "Bronx"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.910879,
+          40.81742
+        ],
+        "type": "Point"
+      },
+      "id": "0278169154437c8f2ca907b7244e2820"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "area": "Upper West Side"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.980256,
+          40.783976
+        ],
+        "type": "Point"
+      },
+      "id": "0cbfa87a7fbd78c4db7ca4d9c749bd7d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "area": "Bushwick"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.917517,
+          40.693682
+        ],
+        "type": "Point"
+      },
+      "id": "0edf902db9fed42f58c58e325057b339"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "area": "East Village"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.986429,
+          40.730236
+        ],
+        "type": "Point"
+      },
+      "id": "16a27f8d153ebd53cee19597d35f49c3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "area": "Williamsburg"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.953569,
+          40.714964
+        ],
+        "type": "Point"
+      },
+      "id": "2bfa300909171b3450c30029c97a9acb"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "area": "Long Island City"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.932887,
+          40.753805
+        ],
+        "type": "Point"
+      },
+      "id": "335738972be2b22c5182055589cbbbb1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "area": "Downtown Brooklyn"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.980655,
+          40.689793
+        ],
+        "type": "Point"
+      },
+      "id": "5ab87e40acb2ec5c9264b8323877ceb2"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "area": "SoHo"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.998431,
+          40.722796
+        ],
+        "type": "Point"
+      },
+      "id": "644d6fef2c46e40bbd9a59896dee0cf2"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "area": "Upper East Side"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.959652,
+          40.773807
+        ],
+        "type": "Point"
+      },
+      "id": "6f635a9c48473a38dec53b9fa779bc1c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "area": "Tribeca"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.009479,
+          40.715336
+        ],
+        "type": "Point"
+      },
+      "id": "8213332ed5bf29ee86730dc12e1b8ce9"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "area": "West Village"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.004738,
+          40.734705
+        ],
+        "type": "Point"
+      },
+      "id": "a6a1b60d6d93c3f4f5a7af0aaa6c2870"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "area": "Harlem"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.945702,
+          40.807691
+        ],
+        "type": "Point"
+      },
+      "id": "bdbcac33fe91baaee57a61b0f9664ed3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "area": "Chelsea"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.001347,
+          40.746376
+        ],
+        "type": "Point"
+      },
+      "id": "c5634c9d0f2dec1663b941739b927e67"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "area": "Washington Heights"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.939782,
+          40.841201
+        ],
+        "type": "Point"
+      },
+      "id": "c8b031fd182325e6fece5ea06d9a2cf4"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "area": "Murray Hill"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.978209,
+          40.748882
+        ],
+        "type": "Point"
+      },
+      "id": "ca702aa446802e5bf7bbd74cfe6b01a5"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "area": "Lower East Side"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.986458,
+          40.716453
+        ],
+        "type": "Point"
+      },
+      "id": "d2b29a7d80c2dd87a143cbb079fc76aa"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "area": "Midtown"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.979119,
+          40.761724
+        ],
+        "type": "Point"
+      },
+      "id": "e6623e0379e8edd984f77d5c3ec803b7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "area": "FiDi"
+      },
+      "geometry": {
+        "coordinates": [
+          -74.009901,
+          40.707814
+        ],
+        "type": "Point"
+      },
+      "id": "ecbb1f55a4712a8143b0844c3c75da9b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "area": "Hell's Kitchen"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.994022,
+          40.758807
+        ],
+        "type": "Point"
+      },
+      "id": "f5dfcbce49fe7eb40b7230eeb637df64"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "area": "Flatiron District"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.988957,
+          40.742539
+        ],
+        "type": "Point"
+      },
+      "id": "f7eba7aabd9da4ee539ad32dd7891aad"
+    }
+  ],
+  "type": "FeatureCollection"
+}

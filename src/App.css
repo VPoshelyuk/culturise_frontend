@@ -105,9 +105,20 @@ nav a:hover::before {
 .video_frame {
   margin: auto;
   overflow: hidden;
+  position:relative;
   width: 1380px;
-  height: 350px;
+  height: 500px;
   border-radius: 25px;
   /* justify-content: center; */
+}
+.video_text {
+  position:absolute;
+  top:75%;
+  left: 10px;
+  text-align:center;
+  margin:0 auto;
+  z-index: 100;
+  color: #FFA69E;
+  /* font-size: xx-large; */
 }
 

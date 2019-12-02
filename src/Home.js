@@ -7,7 +7,7 @@ export default class Home extends React.Component{
   render(){
     return (
       <div className="App">
-        <MainBody />
+        <MainBody events={this.props.events}/>
         <Footer />
       </div>
     )

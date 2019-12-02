@@ -3,10 +3,10 @@ import FactoryReactMapboxGl from 'react-mapbox-gl';
 import mapboxgl,{ GeolocateControl } from "mapbox-gl";
 import IntroVid from './IntroVid'
 import Map from './Map'
+import CardsContainer from './CardsContainer'
 
 class MainBody extends React.Component {
-   
-    render() {
+    render(){
         return (
             <div>
                 <IntroVid />
@@ -14,6 +14,7 @@ class MainBody extends React.Component {
                 <Map />
                 {/* <div ref={el => this.mapContainer = el} className="mapContainer" /> */}
                 <p>nearest carousel</p>
+                <CardsContainer />
                 <p>top picks</p>
                 <p>picks by neighbourhood</p>
             </div>
