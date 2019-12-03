@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import {
     BrowserRouter as Router,
     Switch,
@@ -8,8 +8,9 @@ import {
 import Home from './Home'
 import LogIn from './LogIn'
 import SignUp from './SignUp'
+import LogOut from './LogOut'
 
-export default function NavBar () {
+export default function NavBar (props) {
     return (
         <Router>
             <div>
@@ -21,25 +22,40 @@ export default function NavBar () {
                                 <li>
                                 <Link to="/">Home</Link>
                                 </li>
-                                <li>
-                                <Link to="/login">Log In</Link>
-                                </li>
-                                <li>
-                                <Link to="/signup">Sign Up</Link>
-                                </li>
+                                {props.currentUser === null ?
+                                <Fragment>
+                                    <li>
+                                    <Link to="/login">Log In</Link>
+                                    </li>
+                                    <li>
+                                    <Link to="/signup">Sign Up</Link>
+                                    </li>
+                                </Fragment>
+                                :
+                                <Fragment>
+                                    <li>
+                                        <a>{props.currentUser.username}</a>
+                                    </li>
+                                    <li>
+                                    <Link to="/logout">Log Out</Link>
+                                    </li>
+                                </Fragment>
+                                }
                             </ul>
                         </nav>
                     </div>
                 </header>
-        
                 {/* A <Switch> looks through its children <Route>s and
                     renders the first one that matches the current URL. */}
                 <Switch>
+                    <Route path="/logout">
+                        <LogOut logout={props.logout}/>
+                    </Route>
                     <Route path="/login">
-                        <LogIn />
+                        <LogIn setUser={props.setUser} currentUser={props.currentUser} />
                     </Route>
                     <Route path="/signup">
-                        <SignUp />
+                        <SignUp setUser={props.setUser} currentUser={props.currentUser} />
                     </Route>
                     <Route path="/">
                         <Home/>
