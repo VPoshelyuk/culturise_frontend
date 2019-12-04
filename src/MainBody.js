@@ -1,8 +1,8 @@
 import React, {Fragment} from 'react';
+import { Redirect } from "react-router-dom"
 import IntroVid from './IntroVid'
 import Map from './Map'
 import CardsContainer from './CardsContainer'
-import CardInfo from './CardInfo'
 
 class MainBody extends React.Component {
     state = {
@@ -12,7 +12,8 @@ class MainBody extends React.Component {
         mapClicked: false,
         randArea: {},
         loaded: false,
-        chosenArea: {}
+        clicked: false,
+        chosenEvent: {}
     }
 
     selectRandArea = areaObj => {
@@ -30,12 +31,17 @@ class MainBody extends React.Component {
             mapClicked: true
         })
     }
+    cardClicked = () => {
+        this.setState({
+            clicked: true
+        })
+    }
 
     render(){
         return (
             <div>   
                 {
-                    Object.keys(this.state.chosenArea).length === 0 ?
+                    !this.state.clicked ?
                     <Fragment>
                         <IntroVid />
                         <h1 className="main_text">Events Map by Areas:</h1>
@@ -47,24 +53,54 @@ class MainBody extends React.Component {
                                     this.state.mapClicked ?
                                     <Fragment>
                                         <h1 className="main_text">Events in {this.state.showArea}:</h1>
-                                        <CardsContainer  id={0} lat={this.state.showLat} long={this.state.showLong}/>
+                                        <CardsContainer  
+                                            id={0} 
+                                            lat={this.state.showLat} 
+                                            long={this.state.showLong} 
+                                            setAllChoosenEvents={this.props.setAllChoosenEvents}
+                                            setContainerId={this.props.setContainerId}
+                                            chooseEvent={this.props.chooseEvent}
+                                            cardClicked={this.cardClicked}
+                                            />
                                     </Fragment>
                                     :
                                     null
                                 }
                                 <h1 className="main_text">Nearest Events:</h1>
-                                <CardsContainer  id={1}/>
+                                <CardsContainer  
+                                    id={1} 
+                                    setAllNearesEvents={this.props.setAllNearesEvents}
+                                    setContainerId={this.props.setContainerId}
+                                    chooseEvent={this.props.chooseEvent}
+                                    cardClicked={this.cardClicked}
+                                />
                                 <h1 className="main_text">Recomended Free:</h1>
-                                <CardsContainer id={2}/>
+                                <CardsContainer
+                                    id={2} 
+                                    setAllFreeEvents={this.props.setAllFreeEvents}
+                                    setContainerId={this.props.setContainerId}
+                                    chooseEvent={this.props.chooseEvent}
+                                    cardClicked={this.cardClicked}
+                                    />
                                 <h1 className="main_text">Picks by Neighbourhood({this.state.randArea.area}):</h1>
-                                <CardsContainer id={3} lat={this.state.randArea.geometry.coordinates[1]} long={this.state.randArea.geometry.coordinates[0]}/>
+                                <CardsContainer 
+                                    id={3} 
+                                    lat={this.state.randArea.geometry.coordinates[1]} 
+                                    long={this.state.randArea.geometry.coordinates[0]}
+                                    setAllRandEvents={this.props.setAllRandEvents}
+                                    setContainerId={this.props.setContainerId}
+                                    chooseEvent={this.props.chooseEvent}
+                                    cardClicked={this.cardClicked}
+                                />
                             </Fragment>
                             :
                             <h1>Loading...</h1>
                         }
                     </Fragment>
                     :
-                    <CardInfo />
+                    <Fragment>
+                        <Redirect to="/event"/>
+                    </Fragment>
                 }
             </div>
         );

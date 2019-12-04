@@ -1,11 +1,12 @@
-import React from "react";
+import React, {Fragment} from "react";
+import { Redirect } from 'react-router-dom'
 import Card from './Card'
 
 export default class CardsContainer extends React.Component{
     state = {
         nearestEvents: [],
-        allEvents: [],
-        loaded: false
+        loaded: false,
+        clicked: false
     }
 
     componentDidMount(){
@@ -23,7 +24,10 @@ export default class CardsContainer extends React.Component{
                     })
                 })
                 .then(resp => resp.json())
-                .then(data => this.setState({allEvents: data.Events.Event, nearestEvents: data.Events.Event.slice(0, 5), loaded: true}))
+                .then(data => {
+                    this.setState({nearestEvents: data.Events.Event.slice(0, 5), loaded: true})
+                    if(data.Events.Event.length > 4)this.props.setAllChoosenEvents(data.Events.Event)
+                })
                 break;
             case 1:
                 const options = {
@@ -45,7 +49,10 @@ export default class CardsContainer extends React.Component{
                         })
                     })
                     .then(resp => resp.json())
-                    .then(data => this.setState({allEvents: data.Events.Event, nearestEvents: data.Events.Event !== undefined ? data.Events.Event.slice(0, 5) : [], loaded: true}))
+                    .then(data => {
+                        this.setState({nearestEvents: data.Events.Event.slice(0, 5), loaded: true})
+                        if(data.Events.Event.length > 4)this.props.setAllNearesEvents(data.Events.Event)
+                    })
                 }
                     
                 const error = err => {
@@ -57,7 +64,10 @@ export default class CardsContainer extends React.Component{
             case 2:
                 fetch(`http://localhost:3000/api/v1/free`)
                 .then(resp => resp.json())
-                .then(data => this.setState({allEvents: data.Events.Event, nearestEvents: data.Events.Event !== undefined ? data.Events.Event.slice(0, 5) : [], loaded: true}))
+                .then(data => {
+                    this.setState({nearestEvents: data.Events.Event.slice(0, 5), loaded: true})
+                    if(data.Events.Event.length > 4)this.props.setAllFreeEvents(data.Events.Event)
+                })
                 break;
             case 3:
                 fetch(`http://localhost:3000/api/v1/nearest`,{
@@ -72,14 +82,17 @@ export default class CardsContainer extends React.Component{
                     })
                 })
                 .then(resp => resp.json())
-                .then(data => this.setState({nearestEvents: data.Events.Event.slice(0, 5), loaded: true}))
+                .then(data => {
+                    this.setState({nearestEvents: data.Events.Event.slice(0, 5), loaded: true})
+                    if(data.Events.Event.length > 4)this.props.setAllRandEvents(data.Events.Event)
+                })
                 break;
             default:
                 break;
         }
     } 
 
-    componentWillUpdate(){
+    componentDidUpdate(){
         if(this.props.id === 0){
             fetch(`http://localhost:3000/api/v1/nearest`,{
                 method: "POST",
@@ -93,7 +106,10 @@ export default class CardsContainer extends React.Component{
                 })
             })
             .then(resp => resp.json())
-            .then(data => this.setState({allEvents: data.Events.Event, nearestEvents: data.Events.Event.slice(0, 5), loaded: true}))
+            .then(data => {
+                this.setState({nearestEvents: data.Events.Event.slice(0, 5), loaded: true})
+                if(data.Events.Event.length > 4)this.props.setAllChoosenEvents(data.Events.Event)
+            })
         }
     }
 
@@ -102,12 +118,21 @@ export default class CardsContainer extends React.Component{
             <div>   
                 {this.state.loaded ?
                 <div className="cards">
-                    {this.state.nearestEvents !== undefined ? this.state.nearestEvents.map(event => <Card key={event.Name} event={event}/>) : null}
-                    {
-                        this.state.nearestEvents.length > 0 ?
-                            <p>Show me more!</p>
+                    {!this.state.clicked ?
+                        <Fragment>
+                        {this.state.nearestEvents !== undefined ? this.state.nearestEvents.map(event => <Card key={event.Name} event={event} chooseEvent={this.props.chooseEvent} cardClicked={this.props.cardClicked} />) : null}
+                        {
+                            this.state.nearestEvents.length > 0 ?
+                                this.state.nearestEvents.length > 4 ?
+                                    <p onClick={()=>{this.props.setContainerId(this.props.id); this.setState({clicked: true})}} >Show me more!</p>
+                                :
+                                    null
+                            :
+                                <p style={{paddingLeft: "40px"}}>No events to show, sorry!</p>
+                        }
+                        </Fragment>
                         :
-                            <p style={{paddingLeft: "40px"}}>No events to show, sorry!</p>
+                        <Redirect to="/events" />
                     }
                 </div>
                 :

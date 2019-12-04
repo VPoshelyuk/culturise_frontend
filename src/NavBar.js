@@ -9,6 +9,9 @@ import Home from './Home'
 import LogIn from './LogIn'
 import SignUp from './SignUp'
 import LogOut from './LogOut'
+import Profile from './Profile'
+import CardInfo from './CardInfo'
+import EventsContainer from './EventsContainer'
 
 export default function NavBar (props) {
     return (
@@ -16,7 +19,7 @@ export default function NavBar (props) {
             <div>
                 <header>
                     <div className="container">
-                        <img className="logo" src="./images/nav_logo.png" alt="NavBar logo" />
+                        <a href="/"><img className="logo" src="./images/nav_logo.png" alt="NavBar logo"/></a>
                         <nav>
                             <ul>
                                 <li>
@@ -34,7 +37,7 @@ export default function NavBar (props) {
                                 :
                                 <Fragment>
                                     <li>
-                                        <a>{props.currentUser.username}</a>
+                                    <Link to="/profile">{props.currentUser.username}</Link>
                                     </li>
                                     <li>
                                     <Link to="/logout">Log Out</Link>
@@ -48,17 +51,48 @@ export default function NavBar (props) {
                 {/* A <Switch> looks through its children <Route>s and
                     renders the first one that matches the current URL. */}
                 <Switch>
-                    <Route path="/logout">
+                    <Route exact path="/logout">
                         <LogOut logout={props.logout}/>
                     </Route>
-                    <Route path="/login">
+                    <Route exact path="/login">
                         <LogIn setUser={props.setUser} currentUser={props.currentUser} />
                     </Route>
-                    <Route path="/signup">
-                        <SignUp setUser={props.setUser} currentUser={props.currentUser} />
+                    <Route exact path="/signup">
+                        <SignUp setUser={props.setUser} />
                     </Route>
-                    <Route path="/">
-                        <Home/>
+                    <Route exact path="/profile">
+                        <Profile currentUser={props.currentUser} />
+                    </Route>
+                    <Route exact path="/events">
+                        <EventsContainer 
+                            showEvents={props.showEvents}
+                            chooseEvent={props.chooseEvent}
+                        />
+                    </Route>
+                    <Route exact path="/event">
+                        {
+                            Object.keys(props.chosenEvent).length !== 0 ?
+                                <CardInfo chosenEvent={props.chosenEvent} currentUser={props.currentUser} />
+                            :
+                                <Home 
+                                chooseEvent={props.chooseEvent}
+                                setAllNearesEvents={props.setAllNearesEvents}
+                                setAllChoosenEvents={props.setAllChoosenEvents}
+                                setAllFreeEvents={props.setAllFreeEvents}
+                                setAllRandEvents={props.setAllRandEvents}
+                                setContainerId={props.setContainerId}
+                                />  
+                        }
+                    </Route>
+                    <Route exact path="/">
+                        <Home 
+                            chooseEvent={props.chooseEvent}
+                            setAllNearesEvents={props.setAllNearesEvents}
+                            setAllChoosenEvents={props.setAllChoosenEvents}
+                            setAllFreeEvents={props.setAllFreeEvents}
+                            setAllRandEvents={props.setAllRandEvents}
+                            setContainerId={props.setContainerId}
+                        />
                     </Route>
                 </Switch>
             </div>
