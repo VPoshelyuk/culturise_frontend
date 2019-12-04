@@ -5,8 +5,7 @@ import '../src/App.css'
 
 export default class App extends React.Component {
   state = {
-    currentUser: null,
-    loaded: false
+    currentUser: null
   }
 
   componentDidMount(){
@@ -23,8 +22,7 @@ export default class App extends React.Component {
           alert(response.errors)
         } else {
           this.setState({
-            currentUser: response,
-            loaded: true
+            currentUser: response
           })
         }
       })
