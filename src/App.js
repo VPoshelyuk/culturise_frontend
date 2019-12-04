@@ -51,13 +51,7 @@ export default class App extends React.Component {
     console.log(this.state.currentUser)
     return (
       <div>
-        {
-          this.state.loaded ?
-            <NavBar currentUser={this.state.currentUser} setUser={this.setUser} logout={this.logout}/>
-          :
-            <h1 style={{textAlign: "center"}}>Loading...</h1>
-
-        }
+          <NavBar currentUser={this.state.currentUser} setUser={this.setUser} logout={this.logout}/>
       </div>
     );
   }
