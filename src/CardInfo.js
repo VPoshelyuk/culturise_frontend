@@ -3,7 +3,7 @@ import React from "react";
 export default class Card extends React.Component{
     render(){
         return (
-            <a onClick={e => console.log(e)}>
+            <a href="#">
             <figure style={{backgroundImage: `url(${this.props.event.Image[2].src})`}}>
                 <figcaption>
                 <h4> <span>{this.props.event.Name}</span></h4>
@@ -17,5 +17,3 @@ export default class Card extends React.Component{
         );
     }
 }
-
-

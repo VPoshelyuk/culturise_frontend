@@ -1,16 +1,5 @@
 {"areas": [
     {
-      "area": "Bronx",
-      "geometry": {
-        "coordinates": [
-          -73.910879,
-          40.81742
-        ],
-        "type": "Point"
-      },
-      "id": "0278169154437c8f2ca907b7244e2820"
-    },
-    {
       "area": "Upper West Side",
       "geometry": {
         "coordinates": [
@@ -141,17 +130,6 @@
         "type": "Point"
       },
       "id": "c5634c9d0f2dec1663b941739b927e67"
-    },
-    {
-      "area": "Washington Heights",
-      "geometry": {
-        "coordinates": [
-          -73.939782,
-          40.841201
-        ],
-        "type": "Point"
-      },
-      "id": "c8b031fd182325e6fece5ea06d9a2cf4"
     },
     {
       "area": "Murray Hill",

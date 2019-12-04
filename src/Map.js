@@ -25,7 +25,10 @@ class Map extends React.Component{
   componentDidMount(){
     fetch('http://localhost:4000/areas')
     .then(resp => resp.json())
-    .then(fetchedAreas => this.setState({areas: fetchedAreas}))
+    .then(fetchedAreas => {
+      this.setState({areas: fetchedAreas})
+      this.props.selectRandArea(fetchedAreas[ Math.floor(Math.random() * fetchedAreas.length)])
+    })
   }
 
   getMarkerInfo = e => {

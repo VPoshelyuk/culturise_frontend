@@ -5,7 +5,8 @@ import '../src/App.css'
 
 export default class App extends React.Component {
   state = {
-    currentUser: null
+    currentUser: null,
+    loaded: false
   }
 
   componentDidMount(){
@@ -22,7 +23,8 @@ export default class App extends React.Component {
           alert(response.errors)
         } else {
           this.setState({
-            currentUser: response
+            currentUser: response,
+            loaded: true
           })
         }
       })
@@ -39,7 +41,6 @@ export default class App extends React.Component {
   }
 
   logout = () => {
-    console.log("hi")
     this.setState({
       currentUser: null
     }, () => {
@@ -52,7 +53,13 @@ export default class App extends React.Component {
     console.log(this.state.currentUser)
     return (
       <div>
-        <NavBar currentUser={this.state.currentUser} setUser={this.setUser} logout={this.logout}/>
+        {
+          this.state.loaded ?
+            <NavBar currentUser={this.state.currentUser} setUser={this.setUser} logout={this.logout}/>
+          :
+            <h1 style={{textAlign: "center"}}>Loading...</h1>
+
+        }
       </div>
     );
   }

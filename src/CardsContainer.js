@@ -4,13 +4,27 @@ import Card from './Card'
 export default class CardsContainer extends React.Component{
     state = {
         nearestEvents: [],
-        upcomingEvents: [],
-        randomBoroughEvents: [],
+        allEvents: [],
         loaded: false
     }
 
     componentDidMount(){
         switch (this.props.id) {
+            case 0:
+                fetch(`http://localhost:3000/api/v1/nearest`,{
+                    method: "POST",
+                    headers:{
+                        "accepts": "application/json",
+                        "content-type": "application/json"
+                    },
+                    body:JSON.stringify({
+                        latitude: this.props.lat,
+                        longitude: this.props.long
+                    })
+                })
+                .then(resp => resp.json())
+                .then(data => this.setState({allEvents: data.Events.Event, nearestEvents: data.Events.Event.slice(0, 5), loaded: true}))
+                break;
             case 1:
                 const options = {
                     enableHighAccuracy: true,
@@ -19,7 +33,7 @@ export default class CardsContainer extends React.Component{
                 }
                 const success = pos => {
                     const crd = pos.coords;
-                    fetch(`http://localhost:3000/api/v1/events`,{
+                    fetch(`http://localhost:3000/api/v1/nearest`,{
                         method: "POST",
                         headers:{
                             "accepts": "application/json",
@@ -31,7 +45,7 @@ export default class CardsContainer extends React.Component{
                         })
                     })
                     .then(resp => resp.json())
-                    .then(data => this.setState({nearestEvents: data.Events.Event.slice(0, 5), loaded: true}))
+                    .then(data => this.setState({allEvents: data.Events.Event, nearestEvents: data.Events.Event !== undefined ? data.Events.Event.slice(0, 5) : [], loaded: true}))
                 }
                     
                 const error = err => {
@@ -41,30 +55,20 @@ export default class CardsContainer extends React.Component{
                 navigator.geolocation.getCurrentPosition(success, error, options);
                 break;
             case 2:
-                fetch(`http://localhost:3000/api/v1/events`,{
-                    method: "POST",
-                    headers:{
-                        "accepts": "application/json",
-                        "content-type": "application/json"
-                    },
-                    body:JSON.stringify({
-                        latitude: 40.694669,
-                        longitude: -73.9784867
-                    })
-                })
+                fetch(`http://localhost:3000/api/v1/free`)
                 .then(resp => resp.json())
-                .then(data => this.setState({nearestEvents: data.Events.Event.slice(0, 5), loaded: true}))
+                .then(data => this.setState({allEvents: data.Events.Event, nearestEvents: data.Events.Event !== undefined ? data.Events.Event.slice(0, 5) : [], loaded: true}))
                 break;
             case 3:
-                fetch(`http://localhost:3000/api/v1/events`,{
+                fetch(`http://localhost:3000/api/v1/nearest`,{
                     method: "POST",
                     headers:{
                         "accepts": "application/json",
                         "content-type": "application/json"
                     },
                     body:JSON.stringify({
-                        latitude: 40.721952,
-                        longitude: -74.000144
+                        latitude: this.props.lat,
+                        longitude: this.props.long
                     })
                 })
                 .then(resp => resp.json())
@@ -75,13 +79,36 @@ export default class CardsContainer extends React.Component{
         }
     } 
 
+    componentWillUpdate(){
+        if(this.props.id === 0){
+            fetch(`http://localhost:3000/api/v1/nearest`,{
+                method: "POST",
+                headers:{
+                    "accepts": "application/json",
+                    "content-type": "application/json"
+                },
+                body:JSON.stringify({
+                    latitude: this.props.lat,
+                    longitude: this.props.long
+                })
+            })
+            .then(resp => resp.json())
+            .then(data => this.setState({allEvents: data.Events.Event, nearestEvents: data.Events.Event.slice(0, 5), loaded: true}))
+        }
+    }
+
     render(){
         return (
-            <div>
+            <div>   
                 {this.state.loaded ?
-                <div>
+                <div className="cards">
                     {this.state.nearestEvents !== undefined ? this.state.nearestEvents.map(event => <Card key={event.Name} event={event}/>) : null}
-                    <p>More info</p>
+                    {
+                        this.state.nearestEvents.length > 0 ?
+                            <p>Show me more!</p>
+                        :
+                            <p style={{paddingLeft: "40px"}}>No events to show, sorry!</p>
+                    }
                 </div>
                 :
                 <div>
