@@ -51,25 +51,25 @@ export default function NavBar (props) {
                 {/* A <Switch> looks through its children <Route>s and
                     renders the first one that matches the current URL. */}
                 <Switch>
-                    <Route exact path="/logout">
+                    <Route path="/logout">
                         <LogOut logout={props.logout}/>
                     </Route>
-                    <Route exact path="/login">
+                    <Route path="/login">
                         <LogIn setUser={props.setUser} currentUser={props.currentUser} />
                     </Route>
-                    <Route exact path="/signup">
-                        <SignUp setUser={props.setUser} />
+                    <Route path="/signup">
+                        <SignUp setUser={props.setUser} currentUser={props.currentUser} />
                     </Route>
-                    <Route exact path="/profile">
+                    <Route path="/profile">
                         <Profile currentUser={props.currentUser} />
                     </Route>
-                    <Route exact path="/events">
+                    <Route path="/events">
                         <EventsContainer 
                             showEvents={props.showEvents}
                             chooseEvent={props.chooseEvent}
                         />
                     </Route>
-                    <Route exact path="/event">
+                    <Route path="/event">
                         {
                             Object.keys(props.chosenEvent).length !== 0 ?
                                 <CardInfo chosenEvent={props.chosenEvent} currentUser={props.currentUser} />
@@ -84,7 +84,7 @@ export default function NavBar (props) {
                                 />  
                         }
                     </Route>
-                    <Route exact path="/">
+                    <Route path="/">
                         <Home 
                             chooseEvent={props.chooseEvent}
                             setAllNearesEvents={props.setAllNearesEvents}
