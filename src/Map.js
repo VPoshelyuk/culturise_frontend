@@ -17,7 +17,7 @@ class Map extends React.Component{
       height: 400,
       latitude: 40.75,
       longitude: -74.0060, //NYC Coordinates 
-      zoom: 10
+      zoom: 11
     },
     areas: []
   }
@@ -47,9 +47,10 @@ class Map extends React.Component{
           maxZoom={13}
         >
           {this.state.areas.map(area => <Marker key={area.id} latitude={area.geometry.coordinates[1]} longitude={area.geometry.coordinates[0]}>
-            <p style={{fontSize: "8px"}} data-lat={area.geometry.coordinates[1]} data-long={area.geometry.coordinates[0]} onClick={this.getMarkerInfo} id={area.area}>🖼</p>
+            <p style={{fontSize: "10px"}} data-lat={area.geometry.coordinates[1]} data-long={area.geometry.coordinates[0]} onClick={this.getMarkerInfo} id={area.area}>🖼</p>
           </Marker>)}
-        
+
+          
           <GeolocateControl
             style={geolocateStyle}
             positionOptions={{enableHighAccuracy: true}}

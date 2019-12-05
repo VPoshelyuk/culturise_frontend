@@ -1,6 +1,6 @@
 import React, {Fragment} from "react";
 import LogOut from './LogOut'
-import FavCard from './FavCard'
+import Card from './Card'
 
 export default class CardsContainer extends React.Component{
     state = {
@@ -91,7 +91,7 @@ export default class CardsContainer extends React.Component{
                 {this.props.myEvents !== undefined ? 
                 <div className="my_cards">
                     <h1>Events you added to Favorites:</h1>
-                    {this.props.myEvents.map(event => <FavCard key={event.Name} event={event} />)}
+                    {this.props.myEvents.map(event => <Card key={event.Name} event={event} />)}
                 </div>
                 :
                 null
