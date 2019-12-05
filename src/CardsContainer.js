@@ -50,6 +50,7 @@ export default class CardsContainer extends React.Component{
                     })
                     .then(resp => resp.json())
                     .then(data => {
+                        if (data.Events.Event === undefined) return 
                         this.setState({nearestEvents: data.Events.Event.slice(0, 5), loaded: true})
                         if(data.Events.Event.length > 4)this.props.setAllNearesEvents(data.Events.Event)
                     })
