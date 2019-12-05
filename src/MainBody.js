@@ -73,6 +73,7 @@ class MainBody extends React.Component {
                                     setContainerId={this.props.setContainerId}
                                     chooseEvent={this.props.chooseEvent}
                                     cardClicked={this.cardClicked}
+                                    setMyCoords={this.props.setMyCoords}
                                 />
                                 <h1 className="main_text">Recomended Free:</h1>
                                 <CardsContainer

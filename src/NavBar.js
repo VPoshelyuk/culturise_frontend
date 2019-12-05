@@ -3,7 +3,8 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
+    Link,
+    Redirect
 } from "react-router-dom";
 import Home from './Home'
 import LogIn from './LogIn'
@@ -61,7 +62,13 @@ export default function NavBar (props) {
                         <SignUp setUser={props.setUser} currentUser={props.currentUser} />
                     </Route>
                     <Route path="/profile">
-                        <Profile currentUser={props.currentUser} />
+                        <Profile 
+                            currentUser={props.currentUser} 
+                            setUser={props.setUser} 
+                            logout={props.logout} 
+                            setMyEvents={props.setMyEvents}
+                            myEvents={props.myEvents}
+                        />
                     </Route>
                     <Route path="/events">
                         <EventsContainer 
@@ -72,16 +79,17 @@ export default function NavBar (props) {
                     <Route path="/event">
                         {
                             Object.keys(props.chosenEvent).length !== 0 ?
-                                <CardInfo chosenEvent={props.chosenEvent} currentUser={props.currentUser} />
-                            :
-                                <Home 
-                                chooseEvent={props.chooseEvent}
-                                setAllNearesEvents={props.setAllNearesEvents}
-                                setAllChoosenEvents={props.setAllChoosenEvents}
-                                setAllFreeEvents={props.setAllFreeEvents}
-                                setAllRandEvents={props.setAllRandEvents}
-                                setContainerId={props.setContainerId}
-                                />  
+                                <CardInfo 
+                                    currentUser={props.currentUser} 
+                                    chosenEvent={props.chosenEvent}
+                                    myEvents={props.myEvents}
+                                    removeEvent={props.removeEvent}
+                                    addEvent={props.addEvent}
+                                    myLat={props.myLat}
+                                    myLong={props.myLong}
+                                    />
+                                    :
+                                <Redirect to="/" />
                         }
                     </Route>
                     <Route path="/">
@@ -91,6 +99,7 @@ export default function NavBar (props) {
                             setAllChoosenEvents={props.setAllChoosenEvents}
                             setAllFreeEvents={props.setAllFreeEvents}
                             setAllRandEvents={props.setAllRandEvents}
+                            setMyCoords={props.setMyCoords}
                             setContainerId={props.setContainerId}
                         />
                     </Route>

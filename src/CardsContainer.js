@@ -50,11 +50,12 @@ export default class CardsContainer extends React.Component{
                     })
                     .then(resp => resp.json())
                     .then(data => {
-                        this.setState({nearestEvents: data.Events.Event.slice(0, 5), loaded: true})
-                        if(data.Events.Event.length > 4)this.props.setAllNearesEvents(data.Events.Event)
+                        this.setState({
+                            nearestEvents: data.Events.Event !== undefined  ? data.Events.Event.slice(0, 5) : [], loaded: true})
+                        if(data.Events.Event !== undefined && data.Events.Event.length > 4)this.props.setAllNearesEvents(data.Events.Event)
+                        this.props.setMyCoords(crd.latitude, crd.longitude)
                     })
                 }
-                    
                 const error = err => {
                     console.warn(`ERROR(${err.code}): ${err.message}`);
                 }

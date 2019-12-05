@@ -1,5 +1,4 @@
 import React from "react";
-import { Redirect } from 'react-router-dom'
 import NavBar from './NavBar'
 import '../src/App.css'
 
@@ -7,13 +6,20 @@ import '../src/App.css'
 export default class App extends React.Component {
   state = {
     currentUser: null,
+
     loaded: false,
+
     showEvent: {},
+
     allNearestEvents: [],
     allChoosenAreaEvents: [],
     allFreeEvents: [],
     allRandEvents: [],
-    showEvents: []
+    showEvents: [],
+
+    myEvents: [],
+    myLat: 0,
+    myLong: 0
   }
 
   componentDidMount(){
@@ -46,7 +52,6 @@ export default class App extends React.Component {
     }, () => {
       localStorage.token = response.token
     })
-    
   }
 
   logout = () => {
@@ -115,6 +120,31 @@ export default class App extends React.Component {
     })
   }
 
+  setMyCoords= (lat, long) => {
+    this.setState({
+      myLat: lat,
+      myLong: long
+    })
+  }
+
+  setMyEvents= events => {
+    this.setState({
+      myEvents: events
+    })
+  }
+
+  removeEvent = event_name => {
+    this.setState({
+      myEvents: this.state.myEvents.filter(event => event.name !== event_name)
+    })
+  }
+
+  addEvent= event => {
+    this.setState({
+      myEvents: [...this.state.myEvents, event]
+    })
+  }
+
   render(){
     return (
       <div>
@@ -130,8 +160,15 @@ export default class App extends React.Component {
               setAllChoosenEvents={this.setAllChoosenEvents}
               setAllFreeEvents={this.setAllFreeEvents}
               setAllRandEvents={this.setAllRandEvents}
+              setMyCoords={this.setMyCoords}
               showEvents={this.state.showEvents}
               setContainerId={this.setContainerId}
+              setMyEvents={this.setMyEvents}
+              removeEvent={this.removeEvent}
+              addEvent={this.addEvent}
+              myEvents={this.state.myEvents}
+              myLat={this.state.myLat}
+              myLong={this.state.myLong}
             />
           :
             <h1 style={{textAlign: "center"}}>Loading...</h1>

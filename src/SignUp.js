@@ -33,8 +33,6 @@ export default class SignUp extends React.Component{
             if(response.errors){
                 alert(response.errors)
             } else {
-                // send them somewhere
-                // storing the user object SOMEWHERE
                 this.props.setUser(response)
                 this.setState({
                     fname: "",
@@ -54,7 +52,7 @@ export default class SignUp extends React.Component{
     
 
     render(){
-        if (this.props.currentUser !== null) {
+        if (this.props.currentUser !== null && this.props.currentUser !== undefined) {
             return <Redirect to='/' />;
         } 
         return (

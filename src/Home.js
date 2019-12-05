@@ -14,6 +14,7 @@ export default class Home extends React.Component{
           setAllFreeEvents={this.props.setAllFreeEvents}
           setAllRandEvents={this.props.setAllRandEvents}
           setContainerId={this.props.setContainerId}
+          setMyCoords={this.props.setMyCoords}
         />
         <Footer />
       </div>
