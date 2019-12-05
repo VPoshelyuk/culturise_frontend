@@ -62,13 +62,18 @@ export default function NavBar (props) {
                         <SignUp setUser={props.setUser} currentUser={props.currentUser} />
                     </Route>
                     <Route path="/profile">
-                        <Profile 
-                            currentUser={props.currentUser} 
-                            setUser={props.setUser} 
-                            logout={props.logout} 
-                            setMyEvents={props.setMyEvents}
-                            myEvents={props.myEvents}
-                        />
+                        {props.currentUser !== null ?
+                            <Profile 
+                                currentUser={props.currentUser} 
+                                setUser={props.setUser} 
+                                logout={props.logout} 
+                                setMyEvents={props.setMyEvents}
+                                myEvents={props.myEvents}
+                                chooseEvent={props.chooseEvent}
+                            />
+                            :
+                            <Redirect to="/" />
+                        }
                     </Route>
                     <Route path="/events">
                         <EventsContainer 

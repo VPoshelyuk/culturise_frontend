@@ -12,7 +12,7 @@ export default class Card extends React.Component{
                 </figcaption>
             </figure></a>
             :
-            <a>
+            <a onClick={() => {this.props.chooseEvent(this.props.event); this.props.cardClicked()}}>
             <figure style={{backgroundImage: `url(${this.props.event.image})`}}>
                 <figcaption>
                 <h4> <span>{this.props.event.name}</span></h4>

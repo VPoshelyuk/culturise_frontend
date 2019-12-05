@@ -1,9 +1,12 @@
 import React, {Fragment} from "react";
+import { Redirect } from "react-router-dom"
 import LogOut from './LogOut'
 import Card from './Card'
 
 export default class CardsContainer extends React.Component{
     state = {
+        clicked: false,
+
         fname: "",
         lname: "",
         phonenumber: "",
@@ -81,6 +84,12 @@ export default class CardsContainer extends React.Component{
         .then(this.setState({deleted: true}))
     }
 
+    cardClicked = () => {
+        this.setState({
+            clicked: true
+        })
+    }
+
     render(){
         if(this.state.deleted){
             this.setState({deleted: false})
@@ -88,10 +97,12 @@ export default class CardsContainer extends React.Component{
         }
         return (
             <Fragment>
+            {!this.state.clicked ?
+                <Fragment>
                 {this.props.myEvents !== undefined ? 
                 <div className="my_cards">
                     <h1>Events you added to Favorites:</h1>
-                    {this.props.myEvents.map(event => <Card key={event.Name} event={event} />)}
+                    {this.props.myEvents.map(event => <Card key={event.name} event={event} chooseEvent={this.props.chooseEvent} cardClicked={this.cardClicked} />)}
                 </div>
                 :
                 null
@@ -111,6 +122,10 @@ export default class CardsContainer extends React.Component{
                     </form>
                     <button style={{fontSize: "65px", margin: "10px"}} className="submit" onClick={this.handleDelete}>DE-Culturize(Delete your Profile)</button>
                 </div>
+                </Fragment>
+                :
+                <Redirect to="/event" />
+            }
             </Fragment>
         );
     }
