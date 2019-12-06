@@ -26,7 +26,7 @@ export default class CardsContainer extends React.Component{
                 .then(resp => resp.json())
                 .then(data => {
                     this.setState({
-                        nearestEvents: data !== undefined  ? data.Events.Event.slice(0, 5) : [], loaded: true})
+                        nearestEvents: data.Events.Event !== undefined  ? data.Events.Event.slice(0, 5) : [], loaded: true})
                     if(data.Events.Event !== undefined && data.Events.Event.length > 4)this.props.setAllChoosenEvents(data.Events.Event)
                 })
                 break;
@@ -52,8 +52,8 @@ export default class CardsContainer extends React.Component{
                     .then(resp => resp.json())
                     .then(data => {
                         this.setState({
-                            nearestEvents: data !== undefined  ? data.Events.Event.slice(0, 5) : [], loaded: true})
-                        if(data !== undefined && data.Events.Event.length > 4)this.props.setAllNearesEvents(data.Events.Event)
+                            nearestEvents: data.Events.Event !== undefined  ? data.Events.Event.slice(0, 5) : [], loaded: true})
+                        if(data.Events.Event !== undefined && data.Events.Event.length > 4)this.props.setAllNearesEvents(data.Events.Event)
                         this.props.setMyCoords(crd.latitude, crd.longitude)
                     })
                 }
@@ -68,8 +68,8 @@ export default class CardsContainer extends React.Component{
                 .then(resp => resp.json())
                 .then(data => {
                     this.setState({
-                        nearestEvents: data !== undefined  ? data.Events.Event.slice(0, 5) : [], loaded: true})
-                    if(data !== undefined && data.Events.Event.length > 4)this.props.setAllFreeEvents(data.Events.Event)
+                        nearestEvents: data.Events.Event !== undefined  ? data.Events.Event.slice(0, 5) : [], loaded: true})
+                    if(data.Events.Event !== undefined && data.Events.Event.length > 4)this.props.setAllFreeEvents(data.Events.Event)
                 })
                 break;
             case 3:
@@ -87,8 +87,8 @@ export default class CardsContainer extends React.Component{
                 .then(resp => resp.json())
                 .then(data => {
                     this.setState({
-                        nearestEvents: data !== undefined  ? data.Events.Event.slice(0, 5) : [], loaded: true})
-                    if(data !== undefined && data.Events.Event.length > 4)this.props.setAllRandEvents(data.Events.Event)
+                        nearestEvents: data.Events.Event !== undefined  ? data.Events.Event.slice(0, 5) : [], loaded: true})
+                    if(data.Events.Event !== undefined && data.Events.Event.length > 4)this.props.setAllRandEvents(data.Events.Event)
                 })
                 break;
             default:
